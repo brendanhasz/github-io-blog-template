@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<h1>{{ page.title }}</h1>
+<p class="meta">{{ page.date | date_to_string }} - Tags: {{ page.tags | array_to_sentence_string }}</p>
+
+<div class="button_container">
+  {% if page.github_url %}
+    <a href="{{ page.github_url }}">
+      <div class="button_link">
+        View on<br /><strong>Github</strong>
+      </div>
+    </a>
+  {% endif %}
+  {% if page.colab_url %}
+    <a href="{{ page.colab_url }}">
+      <div class="button_link">
+        View in<br /><strong>Colab</strong>
+      </div>
+    </a>
+  {% endif %}
+  {% if page.kaggle_url %}
+    <a href="{{ page.kaggle_url }}">
+      <div class="button_link">
+        View on<br /><strong>Kaggle</strong>
+      </div>
+    </a>
+  {% endif %}
+</div>
+
+<div class="post">
+  {{ content }}
+</div>

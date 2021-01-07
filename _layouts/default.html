@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% if page.img_url %}
+    <meta property="og:image" content="{{ page.img_url }}"/>
+    {% else %}
+    <meta property="og:image" content="/assets/img/blog_og_image.png"/>
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="628" />
+    {% endif %}
+
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <script>
+      function show_tag_section(tag) {
+        // Hide all other tag divs
+        document.getElementById('all_posts').style.display = 'none';
+        var tag_divs = document.getElementsByClassName('by_tag');
+        var i; 
+        for (var i = 0; i < tag_divs.length; i++) {
+          tag_divs[i].style.display = 'none';
+        }
+        // Show the one we want
+        document.getElementById(tag).style.display = 'block';
+      }
+    </script>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    {% seo %}
+  </head>
+  <body onload="show_tag_section('all_posts')">
+    <div class="wrapper">
+      <header>
+        
+        <h1 style="text-align: center;"><a href="{{ "/" | absolute_url }}">{{ site.name }}</a></h1>
+        
+        <a href="{{ "/" | absolute_url }}"><img src="/assets/img/headshot.jpg" alt="Me" class="center_img" ></a>
+        
+        <div class="row">
+            <div class="col1"> 
+              <span style="vertical-align: middle;"> {{ site.position }} at </span>
+            </div>
+        </div>
+        
+        <div class="row">
+          <a href="{{ site.company_url }}">
+            <div class="col1"> 
+              <img src="/assets/img/company_icon.png" height="16" width="16" style="vertical-align: middle;">  
+              <span style="vertical-align: middle;"> {{ site.company_name }} </span>
+            </div>
+          </a>
+        </div>
+        
+        <div class="row">
+          <div class="col1"> 
+            <img src="/assets/img/place_icon.png" height="16" width="16" style="vertical-align: middle;">  
+            <span style="vertical-align: middle;"> {{ site.place_name }} </span>
+          </div>
+        </div>
+        
+        <hr style="margin: 0 0 10px;"> 
+        
+        <div class="row">
+          <a href="{{ site.github_url }}">
+            <div class="col3"> 
+              <img src="/assets/img/github_icon.png" height="16" width="16" style="vertical-align: middle;"> 
+              <span style="vertical-align: middle;"> Github </span>
+            </div>
+          </a>
+          <a href="{{ site.kaggle_url }}">
+            <div class="col3"> 
+              <img src="/assets/img/kaggle_icon.png" height="16" width="16" style="vertical-align: middle;">  
+              <span style="vertical-align: middle;"> Kaggle </span>
+          </div>
+          </a>
+          <a href="{{ site.linkedin_url }}">
+            <div class="col3">
+              <img src="/assets/img/linkedin_icon.png" height="16" width="16" style="vertical-align: middle;">  
+              <span style="vertical-align: middle;"> LinkedIn </span>
+            </div>
+          </a>
+        </div>
+
+        <div class="row">
+          <a href="mailto:{{ site.email }}">
+            <div class="col3"> 
+              <img src="/assets/img/email_icon.png" height="16" width="16" style="vertical-align: middle;">  
+              <span style="vertical-align: middle;"> Email </span>
+            </div>
+          </a>
+          <a href="{{ site.cv_url }}">
+            <div class="col3"> 
+              <img src="/assets/img/cv_icon.png" height="16" width="16" style="vertical-align: middle;">  
+              <span style="vertical-align: middle;"> CV </span>
+            </div>
+          </a>
+          <a href="{{ site.resume_url }}">
+            <div class="col3"> 
+              <img src="/assets/img/cv_icon.png" height="16" width="16" style="vertical-align: middle;">  
+              <span style="vertical-align: middle;"> Resume </span>
+            </div>
+          </a>                
+        </div>
+
+      </header>
+      <section>
+
+      <div class="small_header">
+
+        <!-- Name -->
+        <div class="small_header_box">
+          <div style="margin:0 auto;width:270px;">
+            <div style="float:left;width:70px">
+              <a href="{{ "/" | absolute_url }}">
+                <img src="/assets/img/headshot.jpg" alt="Me" height="60">
+              </a>
+            </div>
+            <div style="float:left;width:200px;position:relative;bottom:-15px;">
+              <h1><a href="{{ "/" | absolute_url }}">{{ site.name }}</a></h1>
+            </div>
+          </div>
+        </div>
+
+        <!-- Position + Company -->
+        <div class="small_header_box">
+          <div style="position:relative;top:50%;transform:translateY(-50%);">
+            <div>
+              <span> {{ site.position }} at </span>
+            </div>
+            <div>
+              <a href="{{ site.company_url }}">
+                  <img src="/assets/img/company_icon.png" height="16" width="16" style="vertical-align: middle;">  
+                  <span style="vertical-align: middle;"> {{ site.company_name }} </span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Badges/links -->
+        <div class="small_header_box">
+                <div class="row">
+                  <a href="{{ site.github_url }}">
+                    <div class="col3"> 
+                      <img src="/assets/img/github_icon.png" height="16" width="16" style="vertical-align: middle;"> 
+                      <span style="vertical-align: middle;"> Github </span>
+                    </div>
+                  </a>
+                  <a href="{{ site.kaggle_url }}">
+                    <div class="col3"> 
+                      <img src="/assets/img/kaggle_icon.png" height="16" width="16" style="vertical-align: middle;">  
+                      <span style="vertical-align: middle;"> Kaggle </span>
+                  </div>
+                  </a>
+                  <a href="{{ site.linkedin_url }}">
+                    <div class="col3">
+                      <img src="/assets/img/linkedin_icon.png" height="16" width="16" style="vertical-align: middle;">  
+                      <span style="vertical-align: middle;"> LinkedIn </span>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="row">
+                  <a href="mailto:{{ site.email }}">
+                    <div class="col3"> 
+                      <img src="/assets/img/email_icon.png" height="16" width="16" style="vertical-align: middle;">  
+                      <span style="vertical-align: middle;"> Email </span>
+                    </div>
+                  </a>
+                  <a href="{{ site.cv_url }}">
+                    <div class="col3"> 
+                      <img src="/assets/img/cv_icon.png" height="16" width="16" style="vertical-align: middle;">  
+                      <span style="vertical-align: middle;"> CV </span>
+                    </div>
+                  </a>
+                  <a href="{{ site.resume_url }}">
+                    <div class="col3"> 
+                      <img src="/assets/img/cv_icon.png" height="16" width="16" style="vertical-align: middle;">  
+                      <span style="vertical-align: middle;"> Resume </span>
+                    </div>
+                  </a>                
+                </div>
+        </div>
+
+      </div>
+
+      {{ content }}
+
+      </section>
+    </div>
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+  </body>
+</html>

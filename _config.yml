@@ -1,0 +1,31 @@
+name: Your Name
+position: Job Title
+email: youremail@gmail.com
+company_name: Company Name
+company_url: https://www.yourcompany.com
+place_name: City, ST
+github_url: https://github.com/yourgithubusername
+kaggle_url: https://www.kaggle.com/kaggleusername
+linkedin_url: http://www.linkedin.com/in/your-name
+
+title: Your Name's Blog
+description: Blog
+url: http://yourgithubusername.github.io
+long_description: >-
+    Hi!  Welcome to the template github.io blog site.  This can be a paragraph
+    introducing yourself which will go at the top of the main page for your
+    blog.
+
+markdown: kramdown
+logo: /assets/img/headshot.jpg
+cv_url: /assets/files/cv.pdf
+resume_url: /assets/files/resume.pdf
+social:
+  links:
+    - http://www.linkedin.com/in/your-name
+    - https://github.com/yourgithubusername
+    - https://www.kaggle.com/yourkaggleusername
+plugins:
+  - jekyll-seo-tag
+highlighter: rouge
+comments: false
