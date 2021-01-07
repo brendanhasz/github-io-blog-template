@@ -17,7 +17,7 @@ long_description: >-
     blog.
 
 markdown: kramdown
-logo: /assets/img/headshot.jpg
+logo: /assets/img/headshot.png
 cv_url: /assets/files/cv.pdf
 resume_url: /assets/files/resume.pdf
 social:
