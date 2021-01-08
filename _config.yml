@@ -1,13 +1,12 @@
+# Info about you
 name: Your Name
 position: Job Title
 email: youremail@gmail.com
 company_name: Company Name
 company_url: https://www.yourcompany.com
 place_name: City, ST
-github_url: https://github.com/yourgithubusername
-kaggle_url: https://www.kaggle.com/kaggleusername
-linkedin_url: http://www.linkedin.com/in/your-name
 
+# Blog info
 title: Your Name's Blog
 description: Blog
 url: http://yourgithubusername.github.io
@@ -16,16 +15,26 @@ long_description: >-
     introducing yourself which will go at the top of the main page for your
     blog.
 
-markdown: kramdown
-logo: /assets/img/headshot.png
-cv_url: /assets/files/cv.pdf
-resume_url: /assets/files/resume.pdf
+# Social links
+github_url: https://github.com/yourgithubusername
+kaggle_url: https://www.kaggle.com/kaggleusername
+linkedin_url: http://www.linkedin.com/in/your-name
 social:
   links:
     - http://www.linkedin.com/in/your-name
     - https://github.com/yourgithubusername
     - https://www.kaggle.com/yourkaggleusername
+
+# Images + files
+logo: assets/img/headshot.svg
+cv_url: assets/files/cv.pdf
+resume_url: assets/files/resume.pdf
+
+# Blog settings
+markdown: kramdown
 plugins:
   - jekyll-seo-tag
 highlighter: rouge
+color_mode: auto
 comments: false
+disqus_shortname: none
