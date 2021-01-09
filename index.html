@@ -42,13 +42,13 @@ layout: default
   <div id="all_posts">
   <h2> All Posts </h2>
   {% for post in site.posts %}
-    <strong> <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> </strong> <br />
+    <strong> <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> </strong> <br />
     <span><strong>{{ post.date | date_to_string }}</strong> - {{ post.tags | array_to_sentence_string }}</span>
     {% if post.description %} 
       <p> {{ post.description }} </p>
     {% endif %}
     {% if post.img_url %} 
-      <a href="{{ post.url }}" title="{{ post.title }}">
+      <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">
         <img src="{{ post.img_url }}" class="center_img">
       </a>
     {% endif %}
