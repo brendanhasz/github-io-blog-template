@@ -11,7 +11,7 @@
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="628" />
     {% endif %}
-    <base href="{{ site.url }}" target="_blank">
+    <base href="{{ site.url }}">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
     <script>
@@ -34,74 +34,70 @@
     <div class="wrapper">
       <header>
 
-        <h1 style="text-align: center;"><a href="">{{ site.name }}</a></h1>
+        <div class="name_group">
+          <h1 style="text-align: center;"><a href="">{{ site.name }}</a></h1>
+        </div>
 
         <a href=""><img src="{{ site.logo }}" alt="Logo" class="center_img" ></a>
 
-        <div class="row">
-            <div class="col1">
-              <span style="vertical-align: middle;"> {{ site.position }} at </span>
-            </div>
-        </div>
+        <div class="link_group">
 
-        <div class="row">
-          <a href="{{ site.company_url }}">
-            <div class="col1">
-              <img src="assets/img/company_icon.png" height="16" width="16" style="vertical-align: middle;">
-              <span style="vertical-align: middle;"> {{ site.company_name }} </span>
-            </div>
-          </a>
-        </div>
-
-        <div class="row">
-          <div class="col1">
-            <img src="assets/img/place_icon.png" height="16" width="16" style="vertical-align: middle;">
-            <span style="vertical-align: middle;"> {{ site.place_name }} </span>
+          <div class="row">
+              <div class="col1">
+                <span style="vertical-align: middle;"> {{ site.position }} at </span>
+              </div>
           </div>
-        </div>
 
-        <hr style="margin: 0 0 10px;">
-
-        <div class="row">
-          <a href="{{ site.github_url }}">
-            <div class="col3">
-              <img src="assets/img/github_icon.png" height="16" width="16" style="vertical-align: middle;">
-              <span style="vertical-align: middle;"> Github </span>
-            </div>
-          </a>
-          <a href="{{ site.kaggle_url }}">
-            <div class="col3">
-              <img src="assets/img/kaggle_icon.png" height="16" width="16" style="vertical-align: middle;">
-              <span style="vertical-align: middle;"> Kaggle </span>
+          <div class="row">
+            <a href="{{ site.company_url }}">
+              <div class="col1">
+                <img src="assets/img/company_icon.png" height="16" width="16" style="vertical-align: middle;">
+                <span style="vertical-align: middle;"> {{ site.company_name }} </span>
+              </div>
+            </a>
           </div>
-          </a>
-          <a href="{{ site.linkedin_url }}">
-            <div class="col3">
-              <img src="assets/img/linkedin_icon.png" height="16" width="16" style="vertical-align: middle;">
-              <span style="vertical-align: middle;"> LinkedIn </span>
+
+          <div class="row">
+            <div class="col1">
+              <img src="assets/img/place_icon.png" height="16" width="16" style="vertical-align: middle;">
+              <span style="vertical-align: middle;"> {{ site.place_name }} </span>
             </div>
-          </a>
+          </div>
+
         </div>
 
-        <div class="row">
-          <a href="mailto:{{ site.email }}">
-            <div class="col3">
-              <img src="assets/img/email_icon.png" height="16" width="16" style="vertical-align: middle;">
-              <span style="vertical-align: middle;"> Email </span>
-            </div>
-          </a>
-          <a href="{{ site.cv_url }}">
-            <div class="col3">
-              <img src="assets/img/cv_icon.png" height="16" width="16" style="vertical-align: middle;">
-              <span style="vertical-align: middle;"> CV </span>
-            </div>
-          </a>
-          <a href="{{ site.resume_url }}">
-            <div class="col3">
-              <img src="assets/img/cv_icon.png" height="16" width="16" style="vertical-align: middle;">
-              <span style="vertical-align: middle;"> Resume </span>
-            </div>
-          </a>
+        <div class="link_group">
+
+          <div class="row">
+            <a href="{{ site.github_url }}">
+              <div class="col2">
+                <img src="assets/img/github_icon_light.png" height="16" width="16" style="vertical-align: middle;">
+                <span style="vertical-align: middle;"> Github </span>
+              </div>
+            </a>
+            <a href="{{ site.linkedin_url }}">
+              <div class="col2">
+                <img src="assets/img/linkedin_icon_light.png" height="16" width="16" style="vertical-align: middle;">
+                <span style="vertical-align: middle;"> LinkedIn </span>
+              </div>
+            </a>
+          </div>
+
+          <div class="row">
+            <a href="mailto:{{ site.email }}">
+              <div class="col2">
+                <img src="assets/img/email_icon_light.png" height="16" width="16" style="vertical-align: middle;">
+                <span style="vertical-align: middle;"> Email </span>
+              </div>
+            </a>
+            <a href="{{ site.resume_url }}">
+              <div class="col2">
+                <img src="assets/img/cv_icon_light.png" height="16" width="16" style="vertical-align: middle;">
+                <span style="vertical-align: middle;"> Resume </span>
+              </div>
+            </a>
+          </div>
+
         </div>
 
       </header>

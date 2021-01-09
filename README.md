@@ -32,7 +32,7 @@ A template repo for a github.io blog site.
 
 8. Replace `/assets/img/blog_og_image.png` with image you'd like displayed when people share a link to your blog (e.g. on twitter, linkedin, etc)
 
-9. Replace `/assets/files/resume.pdf` and `/assets/files/cv.pdf` with your resume/cv (or delete em).
+9. Replace `/assets/files/resume.pdf` with your resume (or delete it).
 
 10. Delete the example blog posts in `_posts` and replace with your first blog post(s)! (see below)
 
@@ -63,7 +63,7 @@ You can add images for your post(s) in `/assets/img`.  I usually have a folder i
 
 ### Dark mode
 
-By default, dark mode will be used for people viewing the page with their computer/browser preferences set to "Dark".  To force the light theme, in `_config.yml` set `color_mode` to `light`.  Or, to force the dark theme, in `_config.yml` set `color_mode` to `dark`.  
+By default, dark mode will be used for people viewing the page with their computer/browser preferences set to "Dark".  To force the light theme, in `_config.yml` set `color_mode` to `light`.  Or, to force the dark theme, in `_config.yml` set `color_mode` to `dark`.
 
 ### Comments
 
