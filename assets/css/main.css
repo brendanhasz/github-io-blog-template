@@ -1,27 +1,7 @@
-p a:hover {
-  font-weight: normal;
-  text-shadow: 0px 0px 1px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab');
 
-span a:hover {
-  font-weight: normal;
-  text-shadow: 0px 0px 1px;
-}
-
-li a:hover {
-  font-weight: normal;
-  text-shadow: 0px 0px 1px;
-}
-
-a.post_tag:hover {
-  font-weight: normal;
-  text-shadow: 0px 0px 1px;
-}
-
-a.post_lang:hover {
-  font-weight: normal;
-  color: rgb(100,180,100);
-  text-shadow: 0px 0px 1px;
+body{
+  font-family: 'Roboto Slab', sans-serif;
 }
 
 .col3 {
@@ -110,22 +90,24 @@ section {
   border-radius: 5px;
 }
 
-.post_lang {
-  display: inline-block;
-  background: rgba(100,180,100,0.15);
-  color: rgb(100,180,100);
-  padding: 0.3rem 0.5rem;
-  margin: 0.25rem;
-  border-radius: 5px;
-}
 
 @media print, screen and (min-width: 1160px) {
   header {
-    display:block;
+    position: fixed;
+    width: 350px;
+    height: 100%;
+    top: 0;
+    left: 0;
   }
 
   div.small_header {
     display:none;
+  }
+
+  section {
+    position: relative;
+    left: 350px;
+    width: 800px;
   }
 }
 
@@ -143,7 +125,7 @@ section {
   }
 
   header {
-    display:none;
+    display: none;
   }
 
   div.small_header {
