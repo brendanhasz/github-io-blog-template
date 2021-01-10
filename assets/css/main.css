@@ -80,6 +80,12 @@ body{
   margin: 15px 0 15px 0;
 }
 
+.highlight {
+  background-color: #eee;
+  padding: 1px 10px;
+  border-radius: 8px;
+}
+
 .post_tag {
   display: inline-block;
   background: #{{ site.colors.tag }};
