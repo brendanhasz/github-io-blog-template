@@ -38,3 +38,11 @@ highlighter: rouge
 color_mode: auto
 comments: false
 disqus_shortname: none
+
+# Colors
+colors:
+  tag: dbefdc
+  tag_hover: 93cf95
+  header_background: 2b422b
+  header_text: dbefdc
+  header_link_hover: 93cf95

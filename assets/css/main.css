@@ -79,14 +79,14 @@ body{
 
 .post_tag {
   display: inline-block;
-  background: #dbefdc;
+  background: #{{ site.colors.tag }};
   padding: 0.3rem 0.5rem;
   margin: 0.25rem;
   border-radius: 5px;
 }
 
 .post_tag:hover {
-  background: #93cf95;
+  background: #{{ site.colors.tag_hover }};
 }
 
 .col1 img, span {
@@ -98,8 +98,8 @@ body{
 }
 
 .header {
-  background-color: #2b422b;
-  color: #dbefdc;
+  background-color: #{{ site.colors.header_background }};
+  color: #{{ site.colors.header_text }};
 }
 
 .header h1, a {
@@ -108,11 +108,11 @@ body{
 }
 
 .header a {
-  color: #dbefdc;
+  color: #{{ site.colors.header_text }};
 }
 
 .header a:hover {
-  color: #93cf95;
+  color: #{{ site.colors.header_link_hover }};
 }
 
 
