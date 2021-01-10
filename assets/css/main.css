@@ -115,6 +115,9 @@ body{
   color: #{{ site.colors.header_link_hover }};
 }
 
+.content {
+  padding: 20px 40px;
+}
 
 @media print, screen and (min-width: 1160px) {
   .header {
@@ -159,8 +162,4 @@ body{
     display:flex;
   }
 
-  .content {
-    padding: 20px 40px;
-  }
-    
 }
