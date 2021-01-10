@@ -38,6 +38,7 @@ highlighter: rouge
 color_mode: auto
 comments: false
 disqus_shortname: none
+pygments_theme: github
 
 # Colors
 colors:
