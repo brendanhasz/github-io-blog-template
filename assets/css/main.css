@@ -77,11 +77,39 @@ body{
 .small_header_box {
   height:60px;
   flex:1;
-  min-width:270px;
+  min-width:280px;
   margin: 15px 0 15px 0;
 }
 
-.language-python .language-matlab .language-r {
+.name_header_box {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.name_header_img {
+  float: left;
+  width: 80px;
+}
+
+.name_header_name {
+  float: left;
+  position: relative;
+  bottom: 15px;
+}
+
+.language-python.highlighter-rouge {
+  background-color: #eee;
+  padding: 1px 10px;
+  border-radius: 8px;
+}
+
+.language-matlab.highlighter-rouge {
+  background-color: #eee;
+  padding: 1px 10px;
+  border-radius: 8px;
+}
+
+.language-r.highlighter-rouge {
   background-color: #eee;
   padding: 1px 10px;
   border-radius: 8px;
@@ -125,11 +153,11 @@ body{
   color: #{{ site.colors.header_link_hover }};
 }
 
-a {
+.content a {
   color: #{{ site.colors.links }};
 }
 
-a:visited {
+.content a:visited {
   color: #{{ site.colors.links_visited }};
 }
 
