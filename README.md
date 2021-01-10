@@ -2,8 +2,6 @@
 
 A template repo for a github.io blog site.
 
-
-
 ## Features
 
 - Syntax highlighting via [Rouge](http://rouge.jneen.net/) + [Pygments](https://pygments.org/) :rainbow:
@@ -12,6 +10,12 @@ A template repo for a github.io blog site.
 - Comments via [Disqus](https://disqus.com/) :speech_balloon:
 - Post tags (can filter posts by tag on the main page)
 - RSS feed
+
+Screen size|Light|Dark
+--|:-------------:|:-------------:
+Full-width:|![Light full-width](/assets/img/examples/light_full.png)|![Dark full-width](/assets/img/examples/dark_full.png)
+Half-width:|![Light half-width](/assets/img/examples/light_half.png)|![Dark half-width](/assets/img/examples/dark_half.png)
+Mobile:|![Light mobile](/assets/img/examples/light_mobile.png)|![Dark mobile](/assets/img/examples/dark_mobile.png)
 
 
 
@@ -23,7 +27,7 @@ A template repo for a github.io blog site.
 
 3. To test out your setup, in a browser go to `http://your_github_username.github.io` (or, if you gave the repo a custom name, `http://your_github_username.github.io/repository_name`) and you should see the main page!  Now you can edit the repo so it has your own info:
 
-4. Edit `_config.yml` to contain information about you and your new blog in the "Personal info", "Blog info", and "Social links" sections.
+4. Edit `_config.yml` to contain information about you and your new blog in the "Personal info", "Blog info", and "Social links" sections.  Be sure to update `url` to be the url of your blog with a trailing forward slash (i.e. `http://your_github_username.github.io/`, or if you named your repo `something_else`, then `http://your_github_username.github.io/something_else/`).
 
 5. Add an image of yourself to the `/assets/img` folder, and in `_config.yml`, update the value of `logo` to be the filename of that image.
 
@@ -75,6 +79,11 @@ Then, in `_config.yml`, set `comments` to `true`, and set `disqus_shortname` to 
 ### Syntax highlighting
 
 To change the syntax highlighting that's used for code blocks, download the CSS file for the syntax highlighting you want (you can see a preview of different themes [here](http://jwarby.github.io/jekyll-pygments-themes/languages/javascript.html), and you can download the css file for the one you want [here](https://github.com/richleland/pygments-css)).  Add that CSS file to the `/assets/css` folder, and in `_config.yml`, change the value of `syntax_highlight_stylesheet` to be the name of that file.
+
+### Colors
+
+You can change the colors for different elements by setting their values in `_config.yml` (towards the bottom).  These are just hex color codes.  You can also just edit the CSS manually (in `/assets/css/main.css`).
+
 
 
 ## Customization
