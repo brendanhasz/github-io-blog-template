@@ -13,6 +13,7 @@
     {% endif %}
     <base href="{{ site.url }}">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="atom.xml" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
     <script>
       function show_tag_section(tag) {
@@ -31,54 +32,60 @@
     {% seo %}
   </head>
   <body onload="show_tag_section('all_posts')">
-    <div class="wrapper">
-      <div class="header">
 
+    <div class="header">
+
+      <!-- Large header banner on left for large display widths -->
+      <div class="big_header">
+
+        <!-- Name -->
         <div class="name_group">
-          <h1 style="text-align: center;"><a href="">{{ site.name }}</a></h1>
+          <h1><a href="">{{ site.name }}</a></h1>
         </div>
 
         <a href=""><img src="{{ site.logo }}" alt="Logo" class="center_img" ></a>
 
+        <!-- Position + company -->
         <div class="link_group">
 
           <div class="row">
               <div class="col1">
-                <span style="vertical-align: middle;"> {{ site.position }} at </span>
+                <span> {{ site.position }} at </span>
               </div>
           </div>
 
           <div class="row">
             <a href="{{ site.company_url }}">
               <div class="col1">
-                <img src="assets/img/company_icon.png" height="16" width="16" style="vertical-align: middle;">
-                <span style="vertical-align: middle;"> {{ site.company_name }} </span>
+                <img src="assets/img/company_icon.png" height="16" width="16">
+                <span> {{ site.company_name }} </span>
               </div>
             </a>
           </div>
 
           <div class="row">
             <div class="col1">
-              <img src="assets/img/place_icon_light.png" height="16" width="16" style="vertical-align: middle;">
-              <span style="vertical-align: middle;"> {{ site.place_name }} </span>
+              <img src="assets/img/place_icon_light.png" height="16" width="16">
+              <span> {{ site.place_name }} </span>
             </div>
           </div>
 
         </div>
 
+        <!-- Badges/links -->
         <div class="link_group">
 
           <div class="row">
             <a href="{{ site.github_url }}">
               <div class="col2">
-                <img src="assets/img/github_icon_light.png" height="16" width="16" style="vertical-align: middle;">
-                <span style="vertical-align: middle;"> Github </span>
+                <img src="assets/img/github_icon_light.png" height="16" width="16">
+                <span> Github </span>
               </div>
             </a>
             <a href="{{ site.linkedin_url }}">
               <div class="col2">
-                <img src="assets/img/linkedin_icon_light.png" height="16" width="16" style="vertical-align: middle;">
-                <span style="vertical-align: middle;"> LinkedIn </span>
+                <img src="assets/img/linkedin_icon_light.png" height="16" width="16">
+                <span> LinkedIn </span>
               </div>
             </a>
           </div>
@@ -86,14 +93,14 @@
           <div class="row">
             <a href="mailto:{{ site.email }}">
               <div class="col2">
-                <img src="assets/img/email_icon_light.png" height="16" width="16" style="vertical-align: middle;">
-                <span style="vertical-align: middle;"> Email </span>
+                <img src="assets/img/email_icon_light.png" height="16" width="16">
+                <span> Email </span>
               </div>
             </a>
             <a href="{{ site.resume_url }}">
               <div class="col2">
-                <img src="assets/img/cv_icon_light.png" height="16" width="16" style="vertical-align: middle;">
-                <span style="vertical-align: middle;"> Resume </span>
+                <img src="assets/img/cv_icon_light.png" height="16" width="16">
+                <span> Resume </span>
               </div>
             </a>
           </div>
@@ -101,8 +108,8 @@
         </div>
 
       </div>
-      <section>
 
+      <!-- Smaller header banner on top for small display widths -->
       <div class="small_header">
 
         <!-- Name -->
@@ -113,7 +120,7 @@
                 <img src="{{ site.logo }}" alt="Logo" height="60">
               </a>
             </div>
-            <div style="float:left;width:200px;position:relative;bottom:-15px;">
+            <div style="float:left;width:200px;position:relative;bottom:15px;">
               <h1><a href="{{ "/" | absolute_url }}">{{ site.name }}</a></h1>
             </div>
           </div>
@@ -121,14 +128,16 @@
 
         <!-- Position + Company -->
         <div class="small_header_box">
-          <div style="position:relative;top:50%;transform:translateY(-50%);">
-            <div>
+          <div class="row">
+            <div class="col1">
               <span> {{ site.position }} at </span>
             </div>
-            <div>
+          </div>
+          <div class="row">
+            <div class="col1">
               <a href="{{ site.company_url }}">
-                  <img src="assets/img/company_icon.png" height="16" width="16" style="vertical-align: middle;">
-                  <span style="vertical-align: middle;"> {{ site.company_name }} </span>
+                  <img src="assets/img/company_icon.png" height="16" width="16">
+                  <span> {{ site.company_name }} </span>
               </a>
             </div>
           </div>
@@ -138,42 +147,30 @@
         <div class="small_header_box">
                 <div class="row">
                   <a href="{{ site.github_url }}">
-                    <div class="col3">
-                      <img src="assets/img/github_icon.png" height="16" width="16" style="vertical-align: middle;">
-                      <span style="vertical-align: middle;"> Github </span>
+                    <div class="col2">
+                      <img src="assets/img/github_icon.png" height="16" width="16">
+                      <span> Github </span>
                     </div>
                   </a>
-                  <a href="{{ site.kaggle_url }}">
-                    <div class="col3">
-                      <img src="assets/img/kaggle_icon.png" height="16" width="16" style="vertical-align: middle;">
-                      <span style="vertical-align: middle;"> Kaggle </span>
-                  </div>
-                  </a>
                   <a href="{{ site.linkedin_url }}">
-                    <div class="col3">
-                      <img src="assets/img/linkedin_icon.png" height="16" width="16" style="vertical-align: middle;">
-                      <span style="vertical-align: middle;"> LinkedIn </span>
+                    <div class="col2">
+                      <img src="assets/img/linkedin_icon.png" height="16" width="16">
+                      <span> LinkedIn </span>
                     </div>
                   </a>
                 </div>
 
                 <div class="row">
                   <a href="mailto:{{ site.email }}">
-                    <div class="col3">
-                      <img src="assets/img/email_icon.png" height="16" width="16" style="vertical-align: middle;">
-                      <span style="vertical-align: middle;"> Email </span>
-                    </div>
-                  </a>
-                  <a href="{{ site.cv_url }}">
-                    <div class="col3">
-                      <img src="assets/img/cv_icon.png" height="16" width="16" style="vertical-align: middle;">
-                      <span style="vertical-align: middle;"> CV </span>
+                    <div class="col2">
+                      <img src="assets/img/email_icon.png" height="16" width="16">
+                      <span> Email </span>
                     </div>
                   </a>
                   <a href="{{ site.resume_url }}">
-                    <div class="col3">
-                      <img src="assets/img/cv_icon.png" height="16" width="16" style="vertical-align: middle;">
-                      <span style="vertical-align: middle;"> Resume </span>
+                    <div class="col2">
+                      <img src="assets/img/cv_icon.png" height="16" width="16">
+                      <span> Resume </span>
                     </div>
                   </a>
                 </div>
@@ -181,10 +178,14 @@
 
       </div>
 
-      {{ content }}
-
-      </section>
     </div>
-    <script src="assets/js/scale.fix.js"></script>
+
+    <!-- Page content -->
+    <div class="content">
+
+    {{ content }}
+
+    </div>
+
   </body>
 </html>

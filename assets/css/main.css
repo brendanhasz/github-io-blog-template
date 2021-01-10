@@ -2,47 +2,43 @@
 
 body{
   font-family: 'Roboto Slab', sans-serif;
-}
-
-h1, a {
-    text-decoration: none;
-    text-align: center;
+  margin: 0px;
 }
 
 .col3 {
-    float: left;
-    width: 33.33%;
-    text-align: center;
-    height: 20px;
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  height: 20px;
 }
 
 .col2 {
-    float: left;
-    width: 50%;
-    text-align: center;
-    height: 20px;
+  float: left;
+  width: 50%;
+  text-align: center;
+  height: 20px;
 }
 
 .col1 {
-    float: left;
-    width: 99%;
-    text-align: center;
-    height: 20px;
+  float: left;
+  width: 99%;
+  text-align: center;
+  height: 20px;
 }
 
 .row:after {
-    content: "";
-    display: table;
-    clear: both;
-    padding: 5px;
+  content: "";
+  display: table;
+  clear: both;
+  padding: 5px;
 }
 
 .center_img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-    padding-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  padding-bottom: 10px;
 }
 
 .button_container {
@@ -62,14 +58,8 @@ h1, a {
   background: #e7e7e7;
 }
 
-.scroll_box { overflow-x: scroll; }
-
-section {
-  width:600px;
-}
-
-.wrapper {
-  width:960px;
+.scroll_box { 
+  overflow-x: scroll;
 }
 
 .small_header {
@@ -84,7 +74,7 @@ section {
   height:60px;
   flex:1;
   min-width:270px;
-  margin: 0 0 10px 0;
+  margin: 15px 0 15px 0;
 }
 
 .post_tag {
@@ -99,6 +89,33 @@ section {
   background: #93cf95;
 }
 
+.col1 img, span {
+  vertical-align: middle;
+}
+
+.col2 img, span {
+  vertical-align: middle;
+}
+
+.header {
+  background-color: #2b422b;
+  color: #dbefdc;
+}
+
+.header h1, a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.header a {
+  color: #dbefdc;
+}
+
+.header a:hover {
+  color: #93cf95;
+}
+
+
 @media print, screen and (min-width: 1160px) {
   .header {
     position: fixed;
@@ -106,8 +123,6 @@ section {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: #2b422b;
-    color: #dbefdc;
   }
 
   .link_group {
@@ -119,15 +134,11 @@ section {
     padding-bottom: 10px;
   }
 
-  .header a {
-    color: #dbefdc;
-  }
-
   div.small_header {
     display:none;
   }
 
-  section {
+  .content {
     position: relative;
     left: 350px;
     width: 800px;
@@ -136,30 +147,20 @@ section {
 
 @media print, screen and (max-width: 1160px) {
 
-  div.wrapper {
-    width:auto;
-    margin:0;
-  }
-    
-  section, footer {
-    float:none;
-    position:static;
-    width:auto;
+  .header {
+    width: 100%;
   }
 
-  header {
-    display: none;
+  div.big_header {
+    display:none;
   }
 
   div.small_header {
     display:flex;
   }
-    
-  section {
-    border:1px solid #e5e5e5;
-    border-width:1px 0;
-    padding:20px 0;
-    margin:0 0 20px;
+
+  .content {
+    padding: 20px 40px;
   }
     
 }
