@@ -42,8 +42,11 @@ pygments_theme: github
 
 # Colors
 colors:
+  text: 282828
   tag: dbefdc
   tag_hover: 93cf95
   header_background: 2b422b
   header_text: dbefdc
   header_link_hover: 93cf95
+  links: 459c48
+  links_visited: 357a38

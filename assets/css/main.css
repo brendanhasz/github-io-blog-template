@@ -6,6 +6,7 @@
 body{
   font-family: 'Roboto Slab', sans-serif;
   margin: 0px;
+  color: #{{ site.colors.text }};
 }
 
 .col3 {
@@ -80,7 +81,7 @@ body{
   margin: 15px 0 15px 0;
 }
 
-.highlight {
+.language-python .language-matlab .language-r {
   background-color: #eee;
   padding: 1px 10px;
   border-radius: 8px;
@@ -122,6 +123,14 @@ body{
 
 .header a:hover {
   color: #{{ site.colors.header_link_hover }};
+}
+
+a {
+  color: #{{ site.colors.links }};
+}
+
+a:visited {
+  color: #{{ site.colors.links_visited }};
 }
 
 .content {
