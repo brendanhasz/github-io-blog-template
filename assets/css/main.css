@@ -165,7 +165,58 @@ body{
   padding: 20px 40px;
 }
 
+/* Dark mode */
+{% unless site.color_mode == "light" %}
+
+{% if site.color_mode == "auto" %}
+@media (prefers-color-scheme: dark) {
+{% endif %}
+
+{{ site.colors_dark.header_link_hover }}
+
+  body {
+    background-color: #{{ site.colors_dark.background }};
+    color: #{{ site.colors_dark.text }};
+  }
+
+  .header {
+    background-color: #{{ site.colors_dark.header_background }};
+    color: #{{ site.colors_dark.header_text }};
+  }
+
+  .header a {
+    color: #{{ site.colors_dark.header_link }};
+  }
+
+  .header a:hover {
+    color: #{{ site.colors_dark.header_link_hover }};
+  }
+
+  .content a {
+    color: #{{ site.colors_dark.links }};
+  }
+
+  .content a:visited {
+    color: #{{ site.colors_dark.links_visited }};
+  }
+
+  .post_tag {
+    background: #{{ site.colors_dark.tag }};
+  }
+
+  .post_tag:hover {
+    background: #{{ site.colors_dark.tag_hover }};
+  }
+
+{% if site.color_mode == "auto" %}
+}
+{% endif %}
+
+{% endunless %}
+
+/* Large screen widths */
 @media print, screen and (min-width: 1240px) {
+
   .header {
     position: fixed;
     width: 350px;
@@ -195,6 +246,7 @@ body{
 
 }
 
+/* Small screen widths */
 @media print, screen and (max-width: 1240px) {
 
   .header {
