@@ -6,11 +6,12 @@ A template repo for a github.io blog site.
 
 ## Features
 
-- $\LaTeX$ math rendering via [MathJAX](https://www.mathjax.org/)
-- RSS feed (at `http://your_github_username.github.io/atom.xml`)
+- Syntax highlighting via [Rouge](http://rouge.jneen.net/) + [Pygments](https://pygments.org/) :rainbow:
+- $\LaTeX$ math rendering via [MathJAX](https://www.mathjax.org/) :nerd_face:
 - Auto dark mode :sunglasses:
-- Comments via [Disqus](https://disqus.com/)
-- Post tags (on the main page can filter posts by tag)
+- Comments via [Disqus](https://disqus.com/) :speech_balloon:
+- Post tags (can filter posts by tag on the main page)
+- RSS feed
 
 
 
@@ -71,6 +72,9 @@ To enable comments on your posts via [Disqus](https://disqus.com/), first you'll
 
 Then, in `_config.yml`, set `comments` to `true`, and set `disqus_shortname` to [your site's Disqus shortname](https://help.disqus.com/en/articles/1717111-what-s-a-shortname).
 
+### Syntax highlighting
+
+To change the syntax highlighting that's used for code blocks, download the CSS file for the syntax highlighting you want (you can see a preview of different themes [here](http://jwarby.github.io/jekyll-pygments-themes/languages/javascript.html), and you can download the css file for the one you want [here](https://github.com/richleland/pygments-css)).  Add that CSS file to the `/assets/css` folder, and in `_config.yml`, change the value of `pygments_theme` to be the name of that file.
 
 
 ## Customization
@@ -87,4 +91,4 @@ Other than that, it's just a regular github pages site, so see [all their docume
 
 You can feel free to copy/use any of this without restrictions (MIT license).
 
-The [headshot.svg file is CC-BY-SA by East718](https://commons.wikimedia.org/wiki/File:718smiley.svg) (but you'll probably be replacing that with an image of yourself).
+The [placeholder headshot.svg file is CC-BY-SA by East718](https://commons.wikimedia.org/wiki/File:718smiley.svg) (but you'll probably be replacing that with an image of yourself).

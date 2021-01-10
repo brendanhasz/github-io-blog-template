@@ -67,18 +67,18 @@ body{
 }
 
 .small_header {
-  text-align:center;
-  display:flex;
-  flex-wrap:wrap;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
   margin: 0 0 20px 0;
 
 }
 
 .small_header_box {
-  height:60px;
-  flex:1;
-  min-width:280px;
-  margin: 15px 0 15px 0;
+  height: 60px;
+  flex: 1;
+  min-width: 300px;
+  margin: 15px 0;
 }
 
 .name_header_box {
