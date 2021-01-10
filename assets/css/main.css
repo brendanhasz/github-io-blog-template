@@ -145,15 +145,11 @@ body{
   }
 
   .content {
+    width: 800px;
     position: relative;
-    left: 350px;
-    width: 100%;
+    left: calc(calc(100% - 350px)/2 - 400px + 350px);
   }
 
-  .inner_content {
-    width: 800px;
-    margin: 0 auto;
-  }
 }
 
 @media print, screen and (max-width: 1160px) {
@@ -168,10 +164,6 @@ body{
 
   div.small_header {
     display:flex;
-  }
-
-  .inner_content {
-    width: 100%;
   }
 
 }
