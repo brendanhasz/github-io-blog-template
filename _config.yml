@@ -36,7 +36,7 @@ highlighter: rouge
 color_mode: auto  # auto, light, or dark
 comments: false
 disqus_shortname: none
-pygments_theme: github.css
+syntax_highlight_stylesheet: syntax_highlight.css
 
 # Colors - light mode
 colors:

@@ -74,7 +74,7 @@ Then, in `_config.yml`, set `comments` to `true`, and set `disqus_shortname` to 
 
 ### Syntax highlighting
 
-To change the syntax highlighting that's used for code blocks, download the CSS file for the syntax highlighting you want (you can see a preview of different themes [here](http://jwarby.github.io/jekyll-pygments-themes/languages/javascript.html), and you can download the css file for the one you want [here](https://github.com/richleland/pygments-css)).  Add that CSS file to the `/assets/css` folder, and in `_config.yml`, change the value of `pygments_theme` to be the name of that file.
+To change the syntax highlighting that's used for code blocks, download the CSS file for the syntax highlighting you want (you can see a preview of different themes [here](http://jwarby.github.io/jekyll-pygments-themes/languages/javascript.html), and you can download the css file for the one you want [here](https://github.com/richleland/pygments-css)).  Add that CSS file to the `/assets/css` folder, and in `_config.yml`, change the value of `syntax_highlight_stylesheet` to be the name of that file.
 
 
 ## Customization

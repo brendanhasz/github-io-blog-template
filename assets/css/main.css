@@ -172,8 +172,6 @@ body{
 @media (prefers-color-scheme: dark) {
 {% endif %}
 
-{{ site.colors_dark.header_link_hover }}
-
   body {
     background-color: #{{ site.colors_dark.background }};
     color: #{{ site.colors_dark.text }};
