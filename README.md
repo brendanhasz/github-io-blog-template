@@ -7,7 +7,7 @@ A template repo for a github.io blog site.
 ## Features
 
 - Syntax highlighting via [Rouge](http://rouge.jneen.net/) + [Pygments](https://pygments.org/) :rainbow:
-- $\LaTeX$ math rendering via [MathJAX](https://www.mathjax.org/) :nerd_face:
+- LaTeX math rendering via [MathJAX](https://www.mathjax.org/) :nerd_face:
 - Auto dark mode :sunglasses:
 - Comments via [Disqus](https://disqus.com/) :speech_balloon:
 - Post tags (can filter posts by tag on the main page)

@@ -31,6 +31,12 @@ layout: default
     {% endif %}
   {% endfor %}
 
+  {% comment %}
+  Get site url without trailing forward slash
+  {% endcomment %}
+  {% assign site_url_len = site.url | size | minus: 1 %}
+  {% assign site_url = site.url | slice: 0, site_url_len %}
+
   <p>
   <h2> Tags </h2>
   <a onclick="show_tag_section('all_posts')" style="cursor: pointer;" class="post_tag"> All Posts </a>
@@ -43,13 +49,13 @@ layout: default
   <h2> All Posts </h2>
   {% for post in site.posts %}
     <div class="post_block">
-      <h3><a href="{{ site.url | truncate: 1, "" }}{{ post.url }}">{{ post.title }}</a></h3>
+      <h3><a href="{{ site_url }}{{ post.url }}">{{ post.title }}</a></h3>
       <span><strong>{{ post.date | date_to_string }}</strong> - {{ post.tags | array_to_sentence_string }}</span>
       {% if post.description %} 
         <p> {{ post.description }} </p>
       {% endif %}
       {% if post.img_url %} 
-        <a href="{{ site.url | truncate: 1, "" }}{{ post.url }}" title="{{ post.title }}">
+        <a href="{{ site_url }}{{ post.url }}" title="{{ post.title }}">
           <img src="{{ post.img_url }}" class="center_img">
         </a>
       {% endif %}
@@ -63,13 +69,13 @@ layout: default
     {% for post in site.posts %}
       {% if post.tags contains tag %}
         <div class="post_block">
-          <h3><a href="{{ site.url | truncate: 1, "" }}{{ post.url }}">{{ post.title }}</a></h3>
+          <h3><a href="{{ site_url }}{{ post.url }}">{{ post.title }}</a></h3>
           <span><strong>{{ post.date | date_to_string }}</strong> - {{ post.tags | array_to_sentence_string }}</span>
           {% if post.description %} 
             <p> {{ post.description }} </p>
           {% endif %}
           {% if post.img_url %} 
-            <a href="{{ site.url | truncate: 1, "" }}{{ post.url }}" title="{{ post.title }}">
+            <a href="{{ site_url }}{{ post.url }}" title="{{ post.title }}">
               <img src="{{ post.img_url }}" class="center_img">
             </a>
           {% endif %}
