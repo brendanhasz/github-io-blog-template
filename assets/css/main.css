@@ -165,6 +165,10 @@ body{
   padding: 20px 40px;
 }
 
+.post_block h3 {
+  margin-block-end: 2px;
+}
+
 /* Dark mode */
 {% unless site.color_mode == "light" %}
 
@@ -204,6 +208,22 @@ body{
 
   .post_tag:hover {
     background: #{{ site.colors_dark.tag_hover }};
+  }
+
+  .language-python.highlighter-rouge {
+    background-color: #272822;
+  }
+
+  .language-matlab.highlighter-rouge {
+    background-color: #272822;
+  }
+
+  .language-r.highlighter-rouge {
+    background-color: #272822;
+  }
+
+  .button_link:hover {
+    background: #272822;
   }
 
 {% if site.color_mode == "auto" %}
