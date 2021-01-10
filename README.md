@@ -29,17 +29,19 @@ Mobile:|![Light mobile](/assets/img/examples/light_mobile.png)|![Dark mobile](/a
 
 4. Edit `_config.yml` to contain information about you and your new blog in the "Personal info", "Blog info", and "Social links" sections.  Be sure to update `url` to be the url of your blog with a trailing forward slash (i.e. `http://your_github_username.github.io/`, or if you named your repo `something_else`, then `http://your_github_username.github.io/something_else/`).
 
-5. Add an image of yourself to the `/assets/img` folder, and in `_config.yml`, update the value of `logo` to be the filename of that image.
+5. If this is your main `github.io` site (i.e. the repo name is `yourgithubusername.github.io`), then in `_config.yml` set the value of `main_github_io` to `true`.  Otherwise, leave it as `false`.
 
-6. Replace `/assets/img/favicon.ico` with one you want (otherwise it will just be the default github octocat one, you can use a web utility like https://favicon.io/ to convert normal images to favicons)
+6. Add an image of yourself to the `/assets/img` folder, and in `_config.yml`, update the value of `logo` to be the filename of that image.
 
-7. Replace `/assets/img/company_icon.png` with the logo of your company/university.
+7. Replace `/assets/img/favicon.ico` with one you want (otherwise it will just be the default github octocat one, you can use a web utility like https://favicon.io/ to convert normal images to favicons)
 
-8. Replace `/assets/img/blog_og_image.png` with image you'd like displayed when people share a link to your blog (e.g. on twitter, linkedin, etc)
+8. Replace `/assets/img/company_icon.png` with the logo of your company/university.
 
-9. Replace `/assets/files/resume.pdf` with your resume (or delete it).
+9. Replace `/assets/img/blog_og_image.png` with image you'd like displayed when people share a link to your blog (e.g. on twitter, linkedin, etc)
 
-10. Delete the example blog posts in `_posts` and replace with your first blog post(s)! (see below)
+10. Replace `/assets/files/resume.pdf` with your resume (or delete it).
+
+11. Delete the example blog posts in `_posts` and replace with your first blog post(s)! (see below)
 
 
 
@@ -60,7 +62,9 @@ The header of each post defines some important information (the lines surrounded
 
 See the example posts in the `_posts` folder for example markdown content, including sections, links, lists, code blocks, equations, images, etc.
 
-You can add images for your post(s) in `/assets/img`.  I usually have a folder in `/assets/img` for each blog post, just to keep things tidy.
+You can add images for your post(s) in `/assets/img`.  I usually have a folder in `/assets/img` for each blog post, just to keep things tidy.  
+
+:warning: Note that within the post markdown, when linking to an image, use a leading forward slash if this is your main `github.io` site (i.e. if the repo name is `yourgithubusername.github.io`, then do `![](/assets/img/some_img.png)`).  Otherwise, you don't need the leading forward slash (e.g. `![](assets/img/some_img.png)`).
 
 
 

@@ -34,8 +34,12 @@ layout: default
   {% comment %}
   Get site url without trailing forward slash
   {% endcomment %}
-  {% assign site_url_len = site.url | size | minus: 1 %}
-  {% assign site_url = site.url | slice: 0, site_url_len %}
+  {% if site.main_github_io %}
+    {% assign site_url = "" %}
+  {% else %}
+    {% assign site_url_len = site.url | size | minus: 1 %}
+    {% assign site_url = site.url | slice: 0, site_url_len %}
+  {% endif %}
 
   <p>
   <h2> Tags </h2>
