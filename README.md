@@ -2,6 +2,8 @@
 
 A template repo for a github.io blog site.
 
+See the example site at https://brendanhasz.github.io/github-io-blog-template/
+
 ## Features
 
 - Syntax highlighting via [Rouge](http://rouge.jneen.net/) + [Pygments](https://pygments.org/) :rainbow:
